@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITF Lab</title>
+    <link rel="stylesheet" href="../ITF last lab/style.css">
+</head>
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML=document.getElementById("username").value;
+        }
+        function setImage(){
+            console.log(document.getElementById("imageurl").value)
+            document.getElementById("myavatar").style.backgroundImage= "url(" + document.getElementById("imageurl").value + ")";
+        }
+    </script>
+<body>
+    <div class="profile">
+        <!-- avatar -->
+        <div class="avatar">
+            <div id="myavatar"></div>
+            <p>1</p>\
+        </div>
+        <!-- name galley -->
+        <div class="name">
+            <h2 id="myusername">Please Login</h2>
+        </div>
+    </div>
+    <!-- input 2 ตัว -->
+    <div class="url_link">
+        <!-- username -->
+        <div class="username">
+            <label>Username</label>
+            <input type="text" id="username">
+            <button onclick="display()">SET</button>
+        </div>
+        <!-- image profile -->
+        <div class="image_url">
+            <labe>Image URL</labe>
+            <input type="text" id="imageurl">
+            <button onclick="setImage()">SET</button>
+        </div>
+    <div class="gallery">
+        <div class="galley-item" style="grid-column: span 2 / span 2"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item" style="grid-row: span 2 / span 2"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+        <div class="galley-item"></div>
+    </div>
+</body>
+</html>
